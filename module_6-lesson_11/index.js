@@ -106,6 +106,7 @@ caption.textContent = data.imgCaption;
 asideContainer.append(title);
 figure.append(image, caption);
 asideContainer.append(figure);
+
 asideContainer.insertAdjacentHTML(
   'beforeend',
   `<article id="tribute-info">
@@ -128,3 +129,8 @@ asideContainer.insertAdjacentHTML(
                 href="https://en.wikipedia.org/wiki/Michel_Legrand" target="_blank">Wikipedia</a>.</p>
     </article>`
 );
+
+const article = document.querySelector('#tribute-info');
+
+console.log(article.firstChild); // текст
+console.log(article.firstElementChild); // елемент
