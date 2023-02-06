@@ -1,4 +1,4 @@
-// Example 1.
+// Example 1. Створити список технологій що вивчаються на курсі Fullstack за допомогою js
 const technologies = ['HTML', 'CSS', 'JavaScript', 'React', 'Node'];
 
 const container = document.querySelector('#main-container');
@@ -26,7 +26,7 @@ technologies.forEach((technologyItem) => {
 
 container.append(ulEl);
 
-//Example 2
+//Example 2. Створити кілька кнопок на основі масива з обєктами використовуючи createElement
 const colors = [
   {
     label: 'red',
@@ -63,7 +63,7 @@ colors.forEach(({ color, label }) => {
 
 container.append(buttonsContainer);
 
-//3
+//3. Створити сайт з такою розміткою використовуючи лише JS в html файлі має бути пусто
 const data = {
   title: '- Michel Legrand -',
   imgUrl:
@@ -113,6 +113,10 @@ asideContainer.insertAdjacentHTML(
         <div id="intro">
             <p>&bull; Michel Legrand (1932 - 2019) was a famous French musician. &bull;</p>
         </div>
+        <div class="test"><p>1</p></div>
+        <div class="test"><p>2</p></div>
+        <div class="test"><p>3</p></div>
+        <div class="test"><p>4</p></div>
         <p><u>Here are some major facts about him:</u></p>
         <ul>
             ${data.facts.reduce(
@@ -134,3 +138,10 @@ const article = document.querySelector('#tribute-info');
 
 console.log(article.firstChild); // текст
 console.log(article.firstElementChild); // елемент
+
+const elementsTest = document.querySelectorAll('.item');
+
+elementsTest.forEach((element) => {
+  console.log('Elemnt', element.firstElementChild);
+  // console.log(`Elemnt: ${element.firstElementChild}`);
+});
