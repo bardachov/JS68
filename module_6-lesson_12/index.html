@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Click the button to open the modal window:</h2>
+
+    <button id="myBtn">Open Modal</button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Modal Window</h2>
+        
+      </div>
+    </div>
+
+    <p>
+  Selected option text: <span class="text-output">none</span>
+<p>
+<p>
+  Selected option value: <span class="value-output">none</span>
+<p>
+
+  <select class="pizza-select">
+    <option value="four_meats">Four Meats</option>
+    <option value="royal_cheese">Royal Cheese</option>
+    <option value="vegetarian">Vegetarian</option>
+    <option value="smoked_salmon">Smoked Salmon</option>
+  </select>
+
+
+  <input type="text" class="text-input" />
+<p>Text field value: <span class="output"></span></p>
+
+<button type="button" data-action="set">Set focus to input</button>
+<button type="button" data-action="remove">Remove focus from input</button>
+<br><br>
+<input type="text" class="text-input" />
+
+    <script src="./index.js"></script>
+</body>
+</html>
