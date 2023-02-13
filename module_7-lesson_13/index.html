@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>GoIt JavaScript</title>
+</head>
+<body>
+
+  <!-- Клік на button з кахуту -->
+  <div id="test">
+    <button>
+      <span>asdfhbasdjkhf</span>
+    </button>
+  </div>
+
+  <script>
+    const elem = document.querySelector('#test');
+    elem.addEventListener('click', (e) => {
+      console.log(e.target);
+    });
+  </script>
+  <!-- --- -->
+
+
+
+
+
+  <h1 style="text-align: center">GoIt JavaScript. Module 7. Lesson 13</h1>
+
+  <section class="task">
+    <header>
+      <h2>Task 1. Calculator</h2>
+    </header>
+    
+    <div class="task__content">
+      <div class="task__description">
+        <ol>
+          <li>Створити калькурялтор вартості продукту взалежності від ціни</li>
+          <li>При змінні данних в інпуті №1 чи №2 автоматично має перераховуватися загальна вартість</li>
+          <li>Завжди має відображатися валюта - гривня</li>
+          <li>Загальна сума відображається з копійками (2 знаки після коми)</li>
+          <li>В підписі другого інпута має бути кольорова підказка скільки кілограм вибрав користувач на другому інпуті.</li>
+          <li>Кольрова підказка має змінювати своє значення при перетягувані повзунка.</li>
+          <li>В інпуті №2 мін і мах поріг встановлюєте самостійно.</li>
+          <li>При завантаженні сторінки скрип має автоматично розрахувати вартість на основі данних за замовчуванням які ви встановите в розмітці.</li>
+        </ol>
+      </div>
+
+      <div class="task__solution">
+        <div class="container">
+          <h2 class="title">Скільки коштує мясо на шашлики?</h2>
+          <form action="#" class="form">
+              <label for="price">Ціна грн</label>
+              <input type="number" id="price" name="price" value="50">
+              <label for="quantity">Кількість<span class="amount">1</span>кг </label>
+              <input type="range" id="quantity" name="quantity" value="1" min="1" max="100">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="task-block">
+    <header>
+      <h2>Task 2. Створити гелерею з картинок використовуючи масив</h2>
+    </header>
+
+    <div class="task__content">
+      <div class="task__description">
+        <ol>
+          <li>При кліку на картинку показувати модалку з написом що зберігіється в полі title</li>
+          <li>Використовувати делегування при обробці кліків</li>
+        </ol>
+        <code>
+          <pre>
+          [
+            {
+              "title": "Коник стрибунець",
+              "src": "https://cdn.pixabay.com/photo/2022/11/07/00/27/grasshopper-7575278_1280.jpg" 
+            },
+            {
+              "title": "Фрукт",
+              "src": "https://cdn.pixabay.com/photo/2022/10/22/18/10/quince-7539818_1280.jpg"
+            },
+            {
+              "title": "Люди",
+              "src": "https://cdn.pixabay.com/photo/2022/11/05/22/43/against-light-7572922_1280.jpg"
+            },
+            {
+              "title": "Годиник",
+              "src": "https://cdn.pixabay.com/photo/2022/11/06/13/36/architecture-7574031_1280.jpg" 
+            },
+            {
+              "title": "Метро",
+              "src": "https://cdn.pixabay.com/photo/2022/10/31/17/57/subway-7560452_1280.jpg"
+            },
+            {
+              "title": "Хмари",
+              "src": "https://cdn.pixabay.com/photo/2022/10/24/09/54/switzerland-7543063_1280.jpg"
+            },
+          ]
+          <pre>
+        </code>
+      </div>
+
+      <div class="task__solution">
+        <div class="images-gallery"></div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="image-modal-overlay">
+    <div class="image-modal">
+    </div>
+  </div>
+  
+  <script src="./index.js"></script>
+</body>
+</html>
