@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/basicLightbox/5.0.0/basicLightbox.min.css" integrity="sha512-C+KPK958JmUdU8B9SVr8YpEZtQ1T1XrFX/OLvE/lt336DFWXFHL5Y9/tUewMEU+Uy3dUAS363XXLdBine0WDyQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    
+    <title>GoIt JavaScript</title>
+  </head>
+  
+  <body>
+    <h1>Lesson 14. Debounce. Throttle.</h1>
+
+    <section>
+      <header>
+        <h2>Tasks</h2>
+      </header>
+      <ol class="todo">
+        <li>Підключити бібліотеку lodash через скрипт </li>
+        <li>Показати як працює тротл на основі події resize та scroll</li>
+        <li>Показати як працює дебаунс на основі роботи з інпутом</li>
+        <li>**Написати форму логіна та паролья де буде відбуватися валідація полів на довжину після закінчення введення тексту.</li>
+      </ol>
+    </section>
+
+    <section>
+      <div>
+        <h2>Подія scroll</h2>
+        <span>кількість викликів:</span>
+        <b class="scroll-amount">0</b>
+      </div>
+
+      <div>
+        <h2>Подія resize</h2>
+        <span>кількість викликів:</span>
+        <b class="resize-amount">0</b>
+      </div>
+
+    </section>
+
+    <section>
+      <hr>
+      <p>Login Form</p>
+      <form>
+        <div>
+          <input name="login" id="userName" >
+          <span class="validate-message"></span>
+        </div>
+        <div>
+          <input name="password" type="password" id="userPassword" >
+          <span class="validate-message"></span>
+        </div>
+      </form>
+    </section>
+
+
+    <section class="gallery">
+      
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js" integrity="sha256-qXBd/EfAdjOA2FGrGAG+b3YBn2tn5A6bhz+LSgYD96k=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

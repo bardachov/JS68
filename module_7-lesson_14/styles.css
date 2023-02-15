@@ -1,0 +1,16 @@
+.todo .done {
+  background-color: aquamarine;
+}
+
+.gallery img {
+  width: 250px
+}
+
+.basic-ligh-box {
+  display: block;
+}
+
+.basic-ligh-box img {
+  display: block;
+  max-width: 250px;
+}
